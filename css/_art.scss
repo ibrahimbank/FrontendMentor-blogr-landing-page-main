@@ -1,0 +1,41 @@
+.art {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: url(/images/bg-pattern-circles.svg) no-repeat,
+    linear-gradient($Very-dark-gray-blue, $Very-dark-desaturate-blue);
+  background-position: center -18.75rem, center;
+  background-size: 36rem 43rem, 100%;
+  border-radius: 0 7.5rem 0 7.5rem;
+  width: 100%;
+
+  &__wrapper {
+    padding: 2rem;
+    margin: 2rem;
+    width: 100%;
+  }
+
+  &__img {
+    transform: translateY(-62%);
+
+    &__image {
+      width: 95vw;
+      height: 50%;
+      margin-left: -2rem;
+      margin-top: 0;
+    }
+  }
+
+  &__describe {
+    position: relative;
+    margin-top: -15rem;
+    margin-bottom: 10rem;
+  }
+
+  h2,
+  p {
+    color: $text;
+  }
+}
