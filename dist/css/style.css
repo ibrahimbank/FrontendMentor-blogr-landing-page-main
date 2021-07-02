@@ -87,8 +87,8 @@ h2 {
       -ms-flex-pack: center;
           justify-content: center;
   margin-bottom: 3rem;
-  background: url(../images/bg-pattern-intro.svg) no-repeat, -webkit-gradient(linear, left top, left bottom, from(#ff8f70), to(#ff3d54));
-  background: url(../images/bg-pattern-intro.svg) no-repeat, linear-gradient(#ff8f70, #ff3d54);
+  background: url("/images/bg-pattern-intro.svg") no-repeat, -webkit-gradient(linear, left top, left bottom, from(#ff8f70), to(#ff3d54));
+  background: url("/images/bg-pattern-intro.svg") no-repeat, linear-gradient(#ff8f70, #ff3d54);
   background-size: 140rem 156rem, 100%;
   background-position: -45rem -52rem, top;
   border-radius: 0 0 0 6.25rem;
@@ -119,14 +119,14 @@ h2 {
   right: 2rem;
   height: 30px;
   width: 25px;
-  background: url(../images/icon-hamburger.svg) no-repeat center top;
+  background: url("/images/icon-hamburger.svg") no-repeat center top;
   background-size: 100%;
   cursor: pointer;
   z-index: 5;
 }
 
 .header__burger.active {
-  background: url(../images/icon-close.svg) no-repeat center top 100%;
+  background: url("/images/icon-close.svg") no-repeat center top 100%;
   cursor: pointer;
   z-index: 5;
 }
