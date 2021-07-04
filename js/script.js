@@ -40,12 +40,14 @@ burger.addEventListener("click", toggle);
 navItems.forEach((item) => {
   item.addEventListener("click", function (e) {
     e.preventDefault();
+    console.log(item.children);
 
     item.lastElementChild.classList.toggle("active");
 
-    itemLinks.forEach((link) => {
-      console.log(link.lastElementChild);
-      link.lastElementChild.style.transform = "rotate(180deg)";
-    });
+    // itemLinks.forEach((link) => {
+    //   link.lastElementChild.classList.toggle("active");
+    // });// all the image rotate even tho there parent element is not click, better solution 👇🏾
+
+    item.firstElementChild.lastElementChild.classList.toggle("active"); //i look for the first child of item(which is a)so that i can back the arrow image rotate and not just rotate, i make sure the image rotate only when its parent element is click only i.e the image only rotate when the a beside it is click not when other a link thats not beside it are clicked
   });
 });

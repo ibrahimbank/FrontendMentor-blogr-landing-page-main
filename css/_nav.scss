@@ -26,6 +26,10 @@
     margin-top: 8rem;
     padding-top: 5rem;
 
+    img.active {
+      transform: rotate(180deg);
+    }
+
     &.active {
       display: flex;
       align-self: center;

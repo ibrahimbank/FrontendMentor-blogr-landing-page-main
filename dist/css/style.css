@@ -8,6 +8,12 @@
 body {
   font-family: "Overpass", sans-serif, "Ubuntu", sans-serif;
   font-size: 16px;
+  height: 100%;
+}
+
+.main {
+  height: 100%;
+  width: 100%;
 }
 
 a,
@@ -87,8 +93,8 @@ h2 {
       -ms-flex-pack: center;
           justify-content: center;
   margin-bottom: 3rem;
-  background: url("/images/bg-pattern-intro.svg") no-repeat, -webkit-gradient(linear, left top, left bottom, from(#ff8f70), to(#ff3d54));
-  background: url("/images/bg-pattern-intro.svg") no-repeat, linear-gradient(#ff8f70, #ff3d54);
+  background: url(../images/bg-pattern-intro.svg) no-repeat, -webkit-gradient(linear, left top, left bottom, from(#ff8f70), to(#ff3d54));
+  background: url(../images/bg-pattern-intro.svg) no-repeat, linear-gradient(#ff8f70, #ff3d54);
   background-size: 140rem 156rem, 100%;
   background-position: -45rem -52rem, top;
   border-radius: 0 0 0 6.25rem;
@@ -183,6 +189,11 @@ h2 {
   height: 450px;
   margin-top: 8rem;
   padding-top: 5rem;
+}
+
+.nav__Links img.active {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
 }
 
 .nav__Links.active {
@@ -353,18 +364,20 @@ h2 {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  background: url(/images/bg-pattern-circles.svg) no-repeat, -webkit-gradient(linear, left top, left bottom, from(#2c2d3f), to(#3f4164));
-  background: url(/images/bg-pattern-circles.svg) no-repeat, linear-gradient(#2c2d3f, #3f4164);
+  background: url(../images/bg-pattern-circles.svg) no-repeat, -webkit-gradient(linear, left top, left bottom, from(#2c2d3f), to(#3f4164));
+  background: url(../images/bg-pattern-circles.svg) no-repeat, linear-gradient(#2c2d3f, #3f4164);
   background-position: center -18.75rem, center;
   background-size: 36rem 43rem, 100%;
   border-radius: 0 7.5rem 0 7.5rem;
   width: 100%;
+  height: 20%;
 }
 
 .art__wrapper {
   padding: 2rem;
   margin: 2rem;
-  width: 100%;
+  width: 400px;
+  height: 30%;
 }
 
 .art__img {
@@ -373,8 +386,8 @@ h2 {
 }
 
 .art__img__image {
-  width: 95vw;
-  height: 50%;
+  width: 400px;
+  height: 400px;
   margin-left: -2rem;
   margin-top: 0;
 }
@@ -656,7 +669,7 @@ h2 {
   }
   .design__wrapper__img img {
     width: 60vw;
-    height: 100vh;
+    height: 100%;
     margin-top: -9rem;
   }
   .design__wrapper p,
@@ -672,8 +685,7 @@ h2 {
   .art {
     position: relative;
     margin-bottom: 4rem;
-    min-height: 6.25rem;
-    height: 55vh;
+    height: 500px;
     border-radius: 0 7.5rem 0 7.5rem;
     background-size: 65rem 53rem, 100%;
     background-position: -15rem -20rem, center;
@@ -681,7 +693,7 @@ h2 {
   }
   .art__wrapper {
     position: relative;
-    height: 100%;
+    height: 500px;
     width: 100%;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -694,12 +706,14 @@ h2 {
   .art__img {
     -webkit-transform: translateY(0);
             transform: translateY(0);
+    height: 500px;
+    width: 100%;
   }
   .art__img__image {
-    width: 40vw;
-    height: 80vh;
+    width: 500px;
+    height: 700px;
     margin-left: -1rem;
-    margin-top: -13rem;
+    margin-top: -8rem;
   }
   .art__describe {
     position: relative;
@@ -732,12 +746,12 @@ h2 {
   .free__wrapper__img__imgs {
     padding-bottom: 2rem;
     width: 60vw;
-    height: 90vh;
+    height: 90%;
     margin-left: -13rem;
   }
   .free__wrapper__img__imgs img {
     width: 60vw;
-    height: 100vh;
+    height: 100%;
   }
   .free__simple__powerfu {
     padding-top: 3rem;
@@ -861,8 +875,8 @@ h2 {
             transform: translateY(-40%);
   }
   .art__img__image {
-    width: 90vw;
-    height: 30%;
+    width: 90%;
+    height: 20%;
     margin-left: -2rem;
     margin-top: 0;
   }
@@ -875,12 +889,37 @@ h2 {
     background: white;
     margin-left: -3rem;
   }
+  .art__img {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+    height: 500px;
+    width: 100%;
+  }
+  .art__img__image {
+    width: 400px;
+    height: 700px;
+    margin-left: -1rem;
+    margin-top: -8rem;
+  }
+  .art p,
+  .art h2 {
+    text-align: justify;
+    padding-left: 4rem;
+    padding-right: 4rem;
+  }
 }
 
 @media screen and (max-width: 1059px) {
+  .header {
+    margin-bottom: 3rem;
+  }
+  .design > h2 {
+    padding-top: 1rem;
+    margin-bottom: 5rem;
+  }
   .art__describe {
     position: relative;
-    margin-top: -5rem;
+    margin-top: 2rem;
     margin-bottom: 10rem;
   }
 }
